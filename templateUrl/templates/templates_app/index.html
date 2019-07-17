@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "templates_app/base.html"%}
+  {% load my_extras %}
+  {% block body_block %}
+    <h1>Welcome to Index</h1>
+    <h1>Upper Filter: {{ text | upper }}</h1>
+    <h1>Title Filter: {{ text | title }}</h1>
+    <h1>Custom cut Filter: {{ text | cut:'hello' }}</h1>
+    <h1>Add Filter: {{ number | add:"99" }}</h1>
+    <h1>Custom Multipy Filter: {{ number | mul:"4" }}</h1>
+    <h2>This is an example of template inheritance!</h2>
+  {% endblock %}
