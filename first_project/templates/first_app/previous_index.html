@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First Django Application</title>
+    <link rel="stylesheet" href="{% static "css/master.css" %}">
+  </head>
+  <body>
+    <h1>Hello this is index.html!</h1>
+    {{ insert_me }}
+    <h1>Hi Django, Picture Insertion or Static file accessing example.</h1>
+    <img src="{%static "images/1.jpg" %}" alt="Hacker">
+  </body>
+</html>
